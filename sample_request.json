@@ -1,0 +1,9 @@
+{
+  "question": "Who must approve production deploys?",
+  "documents": [
+    {
+      "id": "release-policy",
+      "text": "Production deploys require approval from the release owner. Rollback restores the last approved artifact."
+    }
+  ]
+}

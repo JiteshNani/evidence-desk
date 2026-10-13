@@ -1,0 +1,78 @@
+{
+  "fixture": "six handcrafted cases; not a held-out real-world benchmark",
+  "case_count": 6,
+  "correct": 5,
+  "retrieval_top1": {
+    "tfidf": 1.0,
+    "bm25": 1.0,
+    "hybrid": 1.0
+  },
+  "cases": [
+    {
+      "question": "Who must approve production deploys?",
+      "expected_source": "deploy",
+      "correct": false,
+      "status": "abstained",
+      "answer": "Insufficient evidence in the supplied documents.",
+      "citations": []
+    },
+    {
+      "question": "How quickly are urgent support tickets reviewed?",
+      "expected_source": "support",
+      "correct": true,
+      "status": "answered",
+      "answer": "Support tickets marked urgent are reviewed within two business hours.",
+      "citations": [
+        {
+          "source": "support",
+          "chunk_id": "support:0",
+          "quote": "Support tickets marked urgent are reviewed within two business hours."
+        }
+      ]
+    },
+    {
+      "question": "How long are customer exports retained?",
+      "expected_source": "data",
+      "correct": true,
+      "status": "answered",
+      "answer": "Customer exports are retained for thirty days.",
+      "citations": [
+        {
+          "source": "data",
+          "chunk_id": "data:0",
+          "quote": "Customer exports are retained for thirty days."
+        }
+      ]
+    },
+    {
+      "question": "Does a drift alert trigger automatic retraining?",
+      "expected_source": "monitor",
+      "correct": true,
+      "status": "answered",
+      "answer": "A drift alert triggers review, not automatic retraining.",
+      "citations": [
+        {
+          "source": "monitor",
+          "chunk_id": "monitor:0",
+          "quote": "A drift alert triggers review, not automatic retraining."
+        }
+      ]
+    },
+    {
+      "question": "What is the employee pension contribution?",
+      "expected_source": null,
+      "correct": true,
+      "status": "abstained",
+      "answer": "Insufficient evidence in the supplied documents.",
+      "citations": []
+    },
+    {
+      "question": "Who won the football championship?",
+      "expected_source": null,
+      "correct": true,
+      "status": "abstained",
+      "answer": "Insufficient evidence in the supplied documents.",
+      "citations": []
+    }
+  ]
+}

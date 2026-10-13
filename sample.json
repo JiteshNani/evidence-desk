@@ -1,0 +1,16 @@
+{
+  "documents": [
+    {"id":"deploy","text":"The deployment pipeline requires passing unit tests before release. Production deploys require approval from the release owner. Rollback restores the last approved artifact."},
+    {"id":"support","text":"Support tickets marked urgent are reviewed within two business hours. Standard tickets are reviewed within one business day."},
+    {"id":"data","text":"Customer exports are retained for thirty days. Access requires a verified project role. The retention schedule excludes audit logs."},
+    {"id":"monitor","text":"Model monitoring compares live feature distributions with the training reference. A drift alert triggers review, not automatic retraining."}
+  ],
+  "cases": [
+    {"question":"Who must approve production deploys?","source":"deploy"},
+    {"question":"How quickly are urgent support tickets reviewed?","source":"support"},
+    {"question":"How long are customer exports retained?","source":"data"},
+    {"question":"Does a drift alert trigger automatic retraining?","source":"monitor"},
+    {"question":"What is the employee pension contribution?","source":null},
+    {"question":"Who won the football championship?","source":null}
+  ]
+}
