@@ -44,7 +44,7 @@ Documents → word chunks → TF-IDF and BM25 → rank fusion → coverage gate 
 - `evaluation.json`: actual saved local evaluation output; regenerate with the command above.
 - `LEARNING_GUIDE.md`: walkthrough, interview questions and a practical extension exercise.
 - `Dockerfile`: non-root container configuration. Docker execution has not been verified locally.
-- `ci.yml`: ready-to-install CI definition; place at `.github/workflows/ci.yml` to activate.
+- `.github/workflows/ci.yml`: active automated evaluation and tests; first Linux run passed on 14 October 2026.
 
 ## Measured local results
 
@@ -63,3 +63,4 @@ Local demo only: no authentication, tenant isolation, persistence, TLS, rate lim
 - [scikit-learn Wine dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_wine.html)
 
 MIT license covers this code. The Wine dataset follows the source dataset's terms; synthetic images and example policies are generated fixtures. No patient data is included.
+
